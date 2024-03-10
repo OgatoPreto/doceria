@@ -129,14 +129,13 @@ body {
     width: 60px;
     height: 65px;
     overflow: hidden;
-    background-color: blue;
     border-right: 1px solid white;
     margin-right: 5px;
     float: left;
 }
 .imgApareceu img{
     width: 100%; 
-    height: auto;
+    height: 100%;
 }
 
 .footer{
