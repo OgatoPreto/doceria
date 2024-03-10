@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(img/fundo2.png);
+    padding-top: 8px;
+}
+.principal{
+    width: 32%;
+    min-height: 98vh;
+    background-image: url(img/fundo.png);
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 8px 8px 12px black;
+    overflow: auto;
+    margin-bottom: 8px;
+}
+@media screen and (max-width: 768px){
+    .principal{
+        width: 90%;
+    }
+    .links{
+        text-align: center;
+    }
+}
+@media screen and (min-height: 1180px){
+    .principal{
+        width: 70%;
+    }
+    .links{
+        width: 60%;
+    }
+}
+
+.logoImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10% 0 20% 0;
+    overflow: hidden;
+    border: 2px solid white;
+    transition: transform 1.5s ease;
+    cursor: pointer;
+}
+.logoImg img {
+    width: 100%; 
+    height: auto;
+}
+
+.logoImg.otter{
+    transform: rotatey(360deg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10% 0 20% 0;
+    overflow: hidden;
+    border: 2px solid black;
+}
+.logoImg.otter img {
+    width: 100%; 
+    height: auto;
+}
+
+.links{
+    width: 80%;
+    height: 50px;
+    background: linear-gradient(to top right, deeppink, blueviolet);
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border: 1px solid black;
+    color: white;
+    font-family: verdana;
+    user-select: none;
+}
+
+.links:hover{
+    background: linear-gradient(to top right, black, dimgray);
+    box-shadow: 4px 6px 4px white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.apareceu{
+    width: 80%;
+    border-radius: 5px;
+    font-family: verdana;
+    font-size: medium;
+    margin-top: 20px;
+    color: black;
+    height: auto;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+.apareceu.show{
+    border: 1px solid black;
+    max-height: 610px;
+}
+
+.apareceu h3{
+    color: black;
+}
+.tudo{
+    overflow: hidden;
+    margin: 1%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.imgApareceu{
+    width: 60px;
+    height: 65px;
+    overflow: hidden;
+    background-color: blue;
+    border-right: 1px solid white;
+    margin-right: 5px;
+    float: left;
+}
+.imgApareceu img{
+    width: 100%; 
+    height: auto;
+}
+
+.footer{
+    text-align: center;
+    margin: 8% 0 5% 0;
+    font-family: arial;
+    font-size: small;
+    color: white;
+}
